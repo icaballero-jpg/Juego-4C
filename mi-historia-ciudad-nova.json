@@ -1,0 +1,824 @@
+{
+  "format": "nova-story",
+  "version": 1,
+  "missions": [
+    {
+      "id": 1,
+      "title": "Aula en conflicto",
+      "problem": "Acoso Escolar",
+      "icon": "🏫😣",
+      "boss": "El Humillador",
+      "badge": "Defensor de la dignidad",
+      "value": "Solidaridad y tolerancia",
+      "place": "Colegio Horizonte · aula 4C",
+      "intro": "El cuaderno de Valeria aparece escondido otra vez. Cuando entra al salón, algunos compañeros se ríen y empiezan a repetir un apodo que le pusieron hace unas semanas. Valeria intenta ignorarlos, pero cada día habla menos y prefiere quedarse sola durante el recreo. Lo que comenzó como una “broma” ya está afectando cómo se siente y su forma de participar en clase.",
+      "dilemma": "El grupo vuelve a publicar un montaje de Diego. Él te escribe: «No sé qué hacer mañana».",
+      "color": "#ffbd69",
+      "clues": [
+        [
+          "Cuaderno de Valeria",
+          "En una de las últimas páginas, Valeria escribió: «No quiero volver al recreo porque sé que otra vez se van a reír de mí»."
+        ],
+        [
+          "Foto del cuaderno de Valeria",
+          "En varias páginas aparecen dibujos y frases que muestran que Valeria se siente triste por las burlas que recibe."
+        ],
+        [
+          "Diario personal de Valeria",
+          "Valeria escribió que cada vez se siente más incómoda cuando escucha el apodo que le pusieron y que ha empezado a evitar salir al recreo para no encontrarse con quienes se burlan de ella."
+        ],
+        [
+          "Testimonio de una compañera",
+          "Una compañera cuenta que Valeria antes jugaba y conversaba con todos, pero últimamente prefiere quedarse sola y participa cada vez menos."
+        ]
+      ],
+      "questions": [
+        "¿Qué ocurrió?",
+        "¿Quiénes participaron?",
+        "¿Cómo podemos ayudar?",
+        "¿Cómo te sientes o qué necesitas?"
+      ],
+      "characters": [
+        {
+          "name": "Lucía",
+          "avatar": "👩🏽",
+          "role": "Testigo",
+          "answers": [
+            "Las burlas empezaron hace una semana y se repiten aunque Valeria pide que paren.",
+            "Dos compañeros inventan apodos. Otros reaccionan con risas en el salón.",
+            "Intenté cambiar de tema, pero no hablé con la tutora.",
+            "Creo que se siente sola; prefiero preguntárselo en privado."
+          ]
+        },
+        {
+          "name": "Valeria",
+          "avatar": "🧑🏻",
+          "role": "Compañera",
+          "answers": [
+            "Me escondieron el cuaderno y se burlaron de mí por el apodo que me pusieron. Ya no me parece una broma.",
+            "Algunos compañeros que se ríen de mí y repiten el apodo cuando estoy cerca.",
+            "Quisiera que alguien me acompañara a hablar con un adulto de confianza para que las burlas se detengan.",
+            "Me siento triste, avergonzada y cada vez tengo menos ganas de salir al recreo. Necesito que me escuchen y me apoyen sin culparme."
+          ]
+        }
+      ],
+      "analysis": [
+        "Burlas repetidas y desequilibrio de poder",
+        "Diego y la convivencia del aula",
+        "Dignidad, respeto y empatía",
+        "Acompañar y activar apoyo de la tutora"
+      ],
+      "bible": [
+        "Mateo 7,12",
+        "Trata a los demás como deseas que te traten."
+      ],
+      "light": [
+        "Escuchar a Diego y proteger su dignidad convierte el respeto en una acción.",
+        "Basta con no participar, aunque pueda pedir ayuda.",
+        "Ayudar significa decidir todo por Diego."
+      ],
+      "lightCorrect": 0,
+      "lightNote": "Paráfrasis educativa del pasaje bíblico.",
+      "bossActions": [
+        "Escuchar sin culpar",
+        "Solicitar ayuda de la tutora",
+        "Detener las burlas con seguridad",
+        "Acordar normas de respeto"
+      ],
+      "follow": [
+        "Diego sigue evitando el recreo. La tutora abre una nueva oportunidad para pedir ayuda.",
+        "Diego vuelve al recreo con Lucía. El aula empieza a revisar sus acuerdos."
+      ],
+      "choices": [
+        [
+          "No responder para evitar problemas.",
+          "Diego espera una respuesta que no llega. La publicación sigue circulando y se siente más solo.",
+          {
+            "empathy": -5,
+            "justice": 0,
+            "solidarity": -10,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          0
+        ],
+        [
+          "Reenviar el montaje a otro grupo.",
+          "El montaje llega a más personas. Diego pierde confianza en quienes podían acompañarlo.",
+          {
+            "empathy": -10,
+            "justice": 0,
+            "solidarity": 0,
+            "responsibility": -20,
+            "criticalThinking": 0
+          },
+          -5
+        ],
+        [
+          "Pedir respeto en el grupo.",
+          "Algunos dejan de reaccionar. Diego agradece tu intervención, aunque todavía necesita apoyo cercano.",
+          {
+            "empathy": 10,
+            "justice": 15,
+            "solidarity": 0,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          7
+        ],
+        [
+          "Escucharlo, guardar evidencia sin difundirla y acudir juntos a la tutora.",
+          "La tutora organiza una intervención. Diego participa en las decisiones y vuelve acompañado al aula.",
+          {
+            "empathy": 20,
+            "justice": 20,
+            "solidarity": 0,
+            "responsibility": 15,
+            "criticalThinking": 0
+          },
+          10
+        ]
+      ],
+      "mini": "signal",
+      "miniConfig": {
+        "title": "Detecta la señal",
+        "instructions": "Busca la conversación donde se repite un daño pese a que la persona pidió que se detuviera.",
+        "success": "Detectaste repetición, humillación y un pedido de parar que no se respetó.",
+        "retry": "Busca daño repetido y dificultad para defenderse.",
+        "rounds": [
+          {
+            "prompt": "Lee las conversaciones y detecta la señal.",
+            "correct": 1,
+            "options": [
+              "¿Quieres revisar conmigo el trabajo? Si prefieres hacerlo solo, está bien.",
+              "Otra vez con ese apodo. Lo publicamos cada día aunque pidió que paráramos.",
+              "No estoy de acuerdo con tu idea. ¿Podemos comparar las propuestas?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Barrio sin fronteras",
+      "problem": "Exclusión",
+      "icon": "🌍😓",
+      "boss": "Señor Prejuicio",
+      "badge": "Constructor de igualdad",
+      "value": "Inclusión e Igualdad",
+      "place": "Parque del barrio · torneo juvenil",
+      "intro": "Mateo quiere formar parte del equipo de fútbol de su barrio. Sin embargo, cada vez que se reúnen, sus amigos inventan excusas para dejarlo fuera. Aunque Mateo intenta participar, comienza a sentirse rechazado y piensa que no tiene las mismas oportunidades que los demás.",
+      "dilemma": "El capitán dice que admitir a Amara «traerá problemas». Te pide respaldar la lista.",
+      "color": "#8bcbff",
+      "clues": [
+        [
+          "Lista del torneo",
+          "Amara es la única participante cuyo nombre aparece tachado."
+        ],
+        [
+          "Mensaje del equipo",
+          "«Con ese acento no nos representa», escribió un participante."
+        ],
+        [
+          "Cartel de inscripción",
+          "La convocatoria dice: «Abierto a toda la juventud del barrio»."
+        ],
+        [
+          "Balón prestado",
+          "Amara lleva semanas entrenando y presta su balón al equipo."
+        ]
+      ],
+      "questions": [
+        "¿Qué ocurrió?",
+        "¿Quiénes participaron?",
+        "¿Cómo podemos ayudar?",
+        "¿Cómo te sientes o qué necesitas?"
+      ],
+      "characters": [
+        {
+          "name": "Amara",
+          "avatar": "👩🏿",
+          "role": "Vecina nueva",
+          "answers": [
+            "Me dijeron que el equipo ya estaba completo, pero aceptaron a otra persona después.",
+            "Algunos se burlan de mi forma de hablar.",
+            "Quiero competir con las mismas reglas que los demás.",
+            "No quiero que hablen por mí. Pueden acompañarme a reclamar."
+          ]
+        },
+        {
+          "name": "Mateo",
+          "avatar": "🧑🏽",
+          "role": "Organizador",
+          "answers": [
+            "No revisé quién tachó el nombre.",
+            "Escuché el comentario del acento y no intervine.",
+            "Podemos corregir la lista y publicar criterios claros.",
+            "Entiendo que un torneo abierto debe serlo de verdad."
+          ]
+        }
+      ],
+      "analysis": [
+        "Exclusión por origen y acento",
+        "Amara y otras personas recién llegadas",
+        "Igual dignidad y justicia",
+        "Revisar la inscripción junto a Amara"
+      ],
+      "bible": [
+        "Miqueas 6,8",
+        "Practica la justicia y ama la misericordia."
+      ],
+      "light": [
+        "La justicia requiere revisar las reglas que excluyen a alguien.",
+        "Ser amable elimina la necesidad de cambiar reglas injustas.",
+        "Todas las personas deben renunciar a sus diferencias."
+      ],
+      "lightCorrect": 0,
+      "lightNote": "Paráfrasis educativa del pasaje bíblico.",
+      "bossActions": [
+        "Escuchar la experiencia de Amara",
+        "Cuestionar el prejuicio",
+        "Revisar criterios de participación",
+        "Celebrar distintas culturas"
+      ],
+      "follow": [
+        "La plaza sigue perdiendo participantes. Amara pide que se revisen las reglas.",
+        "Amara juega su primer partido. El equipo aprende a escuchar distintas historias."
+      ],
+      "choices": [
+        [
+          "Aceptar la lista sin preguntar.",
+          "La exclusión parece normal y otras personas nuevas dejan de inscribirse.",
+          {
+            "empathy": 0,
+            "justice": -10,
+            "solidarity": -5,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          0
+        ],
+        [
+          "Repetir el comentario sobre su acento.",
+          "El prejuicio se extiende y Amara decide alejarse del equipo.",
+          {
+            "empathy": -10,
+            "justice": -15,
+            "solidarity": 0,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          -5
+        ],
+        [
+          "Invitarla a entrenar fuera del torneo.",
+          "Amara encuentra compañía, pero la regla injusta sigue excluyéndola del torneo.",
+          {
+            "empathy": 10,
+            "justice": 0,
+            "solidarity": 10,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          6
+        ],
+        [
+          "Escuchar a Amara y exigir criterios iguales con el organizador.",
+          "La lista se corrige con Amara presente. El torneo publica reglas transparentes para todos.",
+          {
+            "empathy": 15,
+            "justice": 20,
+            "solidarity": 0,
+            "responsibility": 0,
+            "criticalThinking": 10
+          },
+          10
+        ]
+      ],
+      "mini": "words",
+      "miniConfig": {
+        "title": "Reconstruye el mensaje",
+        "instructions": "Construye una respuesta inclusiva. Pulsa las palabras en orden; puedes deshacer.",
+        "success": "Escuchar la historia de otra persona abre un espacio de respeto.",
+        "retry": "Revisa el orden. Comienza escuchando su historia y termina con una invitación a participar con respeto.",
+        "words": [
+          "Escuchemos",
+          "tu",
+          "historia",
+          "y",
+          "participemos",
+          "con",
+          "igual",
+          "respeto"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Red bajo ataque",
+      "problem": "Violencia digital",
+      "icon": "📱😨",
+      "boss": "Cybershadow",
+      "badge": "Guardián digital",
+      "value": "Respeto a la privacidad",
+      "place": "Oficina · Trabajo",
+      "intro": "Una tarde, Sofía descubre que una foto privada suya está circulando en el grupo de chat del trabajo. Varias personas la han compartido sin pedirle permiso y algunos comienzan a hacer comentarios sobre ella. Sofía se siente avergonzada y preocupada porque no sabe hasta dónde llegará la imagen.",
+      "dilemma": "Tu amigo quiere que publiques el video para «denunciarlo y que todos se enteren».",
+      "color": "#bfabff",
+      "clues": [
+        [
+          "Publicación viral",
+          "El video incluye un momento privado y comentarios humillantes."
+        ],
+        [
+          "Mensaje de Nico",
+          "«Nunca autoricé esto. Por favor, no lo reenvíes»."
+        ],
+        [
+          "Perfil anónimo",
+          "La cuenta es nueva; no hay evidencia fiable sobre quién está detrás."
+        ],
+        [
+          "Panel de ayuda",
+          "La plataforma permite reportar acoso, bloquear y pedir retirada del contenido."
+        ]
+      ],
+      "questions": [
+        "¿Qué ocurrió?",
+        "¿Quiénes participaron?",
+        "¿Cómo podemos ayudar?",
+        "¿Cómo te sientes o qué necesitas?"
+      ],
+      "characters": [
+        {
+          "name": "Nico",
+          "avatar": "🧑🏾",
+          "role": "Persona afectada",
+          "answers": [
+            "El video se compartió sin mi permiso.",
+            "No sé quién maneja la cuenta; no quiero acusaciones sin pruebas.",
+            "Ayúdame a reportarlo sin volver a publicarlo.",
+            "Quiero hablar con un adulto de confianza y dejar de recibir mensajes."
+          ]
+        },
+        {
+          "name": "Valeria",
+          "avatar": "👩🏻",
+          "role": "Moderadora juvenil",
+          "answers": [
+            "Recibimos reportes de contenido humillante.",
+            "No podemos identificar al autor solo por rumores.",
+            "Guardemos solo la evidencia necesaria, sin redistribuirla.",
+            "Acompañar fuera de la pantalla también es importante."
+          ]
+        }
+      ],
+      "analysis": [
+        "Difusión humillante sin consentimiento",
+        "Nico y su privacidad",
+        "Dignidad, prudencia y responsabilidad",
+        "Reportar, no reenviar y acompañar"
+      ],
+      "bible": [
+        "Juan 13,34",
+        "Ámense unos a otros como yo los he amado."
+      ],
+      "light": [
+        "Cuidar al prójimo incluye proteger su intimidad en las redes.",
+        "Si denuncio algo, puedo difundir cualquier imagen privada.",
+        "Una reacción en pantalla reemplaza todo acompañamiento."
+      ],
+      "lightCorrect": 0,
+      "lightNote": "Paráfrasis educativa del pasaje bíblico.",
+      "bossActions": [
+        "Detener los reenvíos",
+        "Reportar el contenido",
+        "Proteger la evidencia privada",
+        "Acompañar fuera de la red"
+      ],
+      "follow": [
+        "El video todavía circula. Nico necesita apoyo para pedir su retirada.",
+        "Los reenvíos disminuyen. Nico agradece que no hayas expuesto de nuevo su intimidad."
+      ],
+      "choices": [
+        [
+          "Cerrar el chat sin ofrecer apoyo.",
+          "Nico sigue recibiendo mensajes y no sabe a quién recurrir.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": -10,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          0
+        ],
+        [
+          "Publicarlo con un mensaje de indignación.",
+          "Tu intención era denunciar, pero multiplicas las vistas del video que Nico quería retirar.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": 0,
+            "responsibility": -20,
+            "criticalThinking": -10
+          },
+          -5
+        ],
+        [
+          "Pedir al grupo que no lo comparta.",
+          "Varios frenan los reenvíos. Todavía falta reportar el contenido y acompañar a Nico.",
+          {
+            "empathy": 0,
+            "justice": 5,
+            "solidarity": 0,
+            "responsibility": 15,
+            "criticalThinking": 0
+          },
+          7
+        ],
+        [
+          "No difundir, reportar y acompañar a Nico con un adulto de confianza.",
+          "El reporte llega a moderación. Nico tiene apoyo y conserva control sobre lo que cuenta.",
+          {
+            "empathy": 15,
+            "justice": 0,
+            "solidarity": 0,
+            "responsibility": 20,
+            "criticalThinking": 15
+          },
+          10
+        ]
+      ],
+      "mini": "posts",
+      "miniConfig": {
+        "title": "¿Publicar o no publicar?",
+        "instructions": "Revisa privacidad, consentimiento y posible daño antes de elegir.",
+        "success": "Has revisado el consentimiento y el posible daño antes de compartir.",
+        "retry": "Revisa la privacidad y el consentimiento. Puedes intentarlo otra vez.",
+        "categories": [
+          "Publicar",
+          "Pensar antes de publicar",
+          "No publicar"
+        ],
+        "rounds": [
+          {
+            "prompt": "Foto de mi maqueta, sin personas ni datos privados.",
+            "correct": 0
+          },
+          {
+            "prompt": "Foto del equipo: aún no pregunté si todos quieren aparecer.",
+            "correct": 1
+          },
+          {
+            "prompt": "Video privado de Nico con comentarios humillantes.",
+            "correct": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "La ciudad del silencio",
+      "problem": "Indiferencia",
+      "icon": "❤️",
+      "boss": "Corazón de Hielo",
+      "badge": "Corazón solidario",
+      "value": "Solidaridad y servicio",
+      "place": "Centro comunitario · pasaje del Sol",
+      "intro": "El comedor vecinal está cerrado. En la puerta, una nota pide voluntarios. Varias personas pasan, miran y siguen caminando.",
+      "dilemma": "Tu grupo quiere subir una foto entregando comida, pero nadie se ofrece para ordenar el comedor después.",
+      "color": "#ff9ba8",
+      "clues": [
+        [
+          "Nota en la puerta",
+          "El comedor necesita apoyo para organizar donaciones y turnos."
+        ],
+        [
+          "Horario vacío",
+          "Los turnos de esta semana no tienen voluntarios inscritos."
+        ],
+        [
+          "Entrevista escrita",
+          "Rosa cuida sola a su padre y no puede cubrir todos los turnos."
+        ],
+        [
+          "Inventario",
+          "Hay alimentos disponibles, pero faltan manos para clasificarlos y distribuirlos."
+        ]
+      ],
+      "questions": [
+        "¿Qué ocurrió?",
+        "¿Quiénes participaron?",
+        "¿Cómo podemos ayudar?",
+        "¿Cómo te sientes o qué necesitas?"
+      ],
+      "characters": [
+        {
+          "name": "Rosa",
+          "avatar": "👩🏽‍🦱",
+          "role": "Coordinadora",
+          "answers": [
+            "No faltan buenas intenciones; faltan compromisos que podamos cumplir.",
+            "Algunas familias dependen de este apoyo. Evitemos exponerlas.",
+            "Necesitamos turnos pequeños y una persona adulta que supervise.",
+            "Pregunten qué hace falta antes de traer cosas."
+          ]
+        },
+        {
+          "name": "Leo",
+          "avatar": "🧑🏼",
+          "role": "Voluntario",
+          "answers": [
+            "Prometimos venir muchos, pero nadie acordó una hora.",
+            "Puedo ayudar una tarde, no toda la semana.",
+            "Si repartimos tareas, podemos sostenerlo.",
+            "Prefiero servir sin fotografiar a las familias."
+          ]
+        }
+      ],
+      "analysis": [
+        "Falta de apoyo organizado y constante",
+        "Familias y equipo del comedor",
+        "Solidaridad, servicio y dignidad",
+        "Acordar turnos realistas con la comunidad"
+      ],
+      "bible": [
+        "Mateo 25,40",
+        "Lo que hicieron por uno de mis hermanos más pequeños, por mí lo hicieron."
+      ],
+      "light": [
+        "Servir implica escuchar y sostener acciones concretas con respeto.",
+        "Ayudar vale más cuando obtiene muchas reacciones.",
+        "Debo prometerlo todo aunque no pueda cumplirlo."
+      ],
+      "lightCorrect": 0,
+      "lightNote": "Paráfrasis educativa del pasaje bíblico.",
+      "bossActions": [
+        "Preguntar qué hace falta",
+        "Repartir tareas alcanzables",
+        "Proteger la intimidad",
+        "Mantener los turnos acordados"
+      ],
+      "follow": [
+        "Rosa busca ayuda para reabrir. Todavía puedes comprometerte con un turno realista.",
+        "El comedor vuelve a abrir. Los turnos compartidos permiten que Rosa descanse."
+      ],
+      "choices": [
+        [
+          "Seguir de largo: alguien más ayudará.",
+          "El comedor continúa cerrado y Rosa carga con tareas que no puede sostener sola.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": -15,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          0
+        ],
+        [
+          "Publicar fotos de las familias sin preguntar.",
+          "La publicación obtiene atención, pero algunas familias se sienten expuestas y dejan de acudir.",
+          {
+            "empathy": -10,
+            "justice": 0,
+            "solidarity": 0,
+            "responsibility": -15,
+            "criticalThinking": 0
+          },
+          -5
+        ],
+        [
+          "Dejar una donación y retirarte.",
+          "La donación ayuda hoy, aunque el comedor todavía necesita organización para abrir mañana.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": 15,
+            "responsibility": 0,
+            "criticalThinking": 0
+          },
+          6
+        ],
+        [
+          "Preguntar qué necesitan y organizar turnos posibles con supervisión.",
+          "El grupo acuerda responsabilidades y el comedor reabre sin exponer a quienes reciben apoyo.",
+          {
+            "empathy": 10,
+            "justice": 0,
+            "solidarity": 20,
+            "responsibility": 15,
+            "criticalThinking": 0
+          },
+          10
+        ]
+      ],
+      "mini": "radar",
+      "miniConfig": {
+        "title": "Radar de empatía",
+        "instructions": "Escucha las necesidades y los límites de las personas.",
+        "success": "Escuchar, respetar límites y asumir compromisos posibles protege la dignidad.",
+        "retry": "La empatía escucha necesidades y límites. No presiona ni expone a la otra persona.",
+        "rounds": [
+          {
+            "prompt": "Rosa dice que está agotada. ¿Qué haces?",
+            "correct": 0,
+            "options": [
+              "Preguntarle qué tarea concreta puedes asumir.",
+              "Decirle que sonría para una foto.",
+              "Prometer ir todos los días aunque no puedas."
+            ]
+          },
+          {
+            "prompt": "Leo solo puede ayudar una tarde. ¿Cómo respondes?",
+            "correct": 1,
+            "options": [
+              "Exigirle que cancele sus otras responsabilidades.",
+              "Acordar un turno posible y repartir las otras tareas.",
+              "Excluirlo por tener poco tiempo."
+            ]
+          },
+          {
+            "prompt": "Una familia no quiere aparecer en la campaña. ¿Qué haces?",
+            "correct": 2,
+            "options": [
+              "Publicar porque la causa es buena.",
+              "Insistir hasta que acepte.",
+              "Respetar su decisión y mostrar el proyecto sin identificarla."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Zona verde en peligro",
+      "problem": "Contaminación",
+      "icon": "🌱",
+      "boss": "Tóxico",
+      "badge": "Guardián de la creación",
+      "value": "Cuidado de la creación",
+      "place": "Parque del río · sendero verde",
+      "intro": "El río arrastra envases y el parque amaneció cubierto de residuos. La solución no puede terminar en una fotografía de limpieza.",
+      "dilemma": "El equipo propone recoger todo rápidamente y arrojar las bolsas detrás del parque.",
+      "color": "#a8e879",
+      "clues": [
+        [
+          "Orilla del río",
+          "Hay botellas y bolsas atrapadas entre las plantas. No es seguro entrar al agua."
+        ],
+        [
+          "Contenedores",
+          "Los rótulos están borrados y la basura se mezcla."
+        ],
+        [
+          "Cartel del festival",
+          "El fin de semana se usaron muchos envases desechables."
+        ],
+        [
+          "Agenda municipal",
+          "El servicio local puede coordinar retiro y orientar sobre residuos especiales."
+        ]
+      ],
+      "questions": [
+        "¿Qué ocurrió?",
+        "¿Quiénes participaron?",
+        "¿Cómo podemos ayudar?",
+        "¿Cómo te sientes o qué necesitas?"
+      ],
+      "characters": [
+        {
+          "name": "Alma",
+          "avatar": "👩🏾",
+          "role": "Brigadista",
+          "answers": [
+            "La basura aumentó después del festival.",
+            "El agua y los vidrios rotos requieren personal preparado.",
+            "Podemos separar residuos seguros con guantes y supervisión.",
+            "También hay que reducir desechables en el próximo evento."
+          ]
+        },
+        {
+          "name": "Tomás",
+          "avatar": "🧑🏻‍🦱",
+          "role": "Vecino",
+          "answers": [
+            "Limpiamos una vez, pero la basura regresó.",
+            "Faltan señales claras y coordinación con la recolección.",
+            "Podemos hablar con organizadores y autoridades locales.",
+            "El parque es nuestra casa común, también para quienes vendrán."
+          ]
+        }
+      ],
+      "analysis": [
+        "Residuos y hábitos que repiten el daño",
+        "Vecinos, ecosistema y futuras generaciones",
+        "Responsabilidad y cuidado de la creación",
+        "Prevenir, separar y coordinar retiro seguro"
+      ],
+      "bible": [
+        "Génesis 2,15",
+        "Dios confía al ser humano el cuidado y el cultivo de la creación."
+      ],
+      "light": [
+        "Cuidar la creación une hábitos personales y acuerdos comunitarios.",
+        "Mover la basura fuera de mi vista resuelve el problema.",
+        "La naturaleza no tiene relación con mi fe."
+      ],
+      "lightCorrect": 0,
+      "lightNote": "Paráfrasis educativa del pasaje bíblico.",
+      "bossActions": [
+        "Reconocer riesgos y pedir supervisión",
+        "Separar residuos seguros",
+        "Coordinar recolección local",
+        "Reducir desechables"
+      ],
+      "follow": [
+        "La basura reaparece. La comunidad necesita un plan que prevenga nuevos residuos.",
+        "El río tiene menos residuos y el festival prepara opciones reutilizables."
+      ],
+      "choices": [
+        [
+          "No hacer nada porque volverá a ensuciarse.",
+          "Los residuos siguen acumulándose y el sendero se vuelve menos accesible.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": -5,
+            "responsibility": -10,
+            "criticalThinking": 0
+          },
+          0
+        ],
+        [
+          "Mover las bolsas a un terreno vacío.",
+          "El parque parece limpio, pero la contaminación se traslada a otro lugar.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": 0,
+            "responsibility": -20,
+            "criticalThinking": -10
+          },
+          -5
+        ],
+        [
+          "Recoger los residuos seguros en una jornada.",
+          "El sendero mejora. Sin coordinación y prevención, parte del problema puede regresar.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": 10,
+            "responsibility": 15,
+            "criticalThinking": 0
+          },
+          7
+        ],
+        [
+          "Coordinar limpieza segura, separación, retiro y reducción de desechables.",
+          "La comunidad recupera el parque y cambia el próximo festival para generar menos basura.",
+          {
+            "empathy": 0,
+            "justice": 0,
+            "solidarity": 15,
+            "responsibility": 20,
+            "criticalThinking": 15
+          },
+          10
+        ]
+      ],
+      "mini": "waste",
+      "miniConfig": {
+        "title": "Clasifica los residuos",
+        "instructions": "Arrastra el objeto o pulsa su categoría. Consulta las reglas de recolección locales; no manipules residuos peligrosos ni vidrio roto.",
+        "success": "Identificaste los materiales y su clasificación.",
+        "retry": "Observa de qué está hecho el objeto y prueba otra categoría.",
+        "categories": [
+          "Papel",
+          "Plástico",
+          "Orgánico",
+          "Vidrio"
+        ],
+        "rounds": [
+          {
+            "prompt": "Hoja de papel limpia",
+            "correct": 0
+          },
+          {
+            "prompt": "Botella de plástico vacía",
+            "correct": 1
+          },
+          {
+            "prompt": "Cáscara de plátano",
+            "correct": 2
+          },
+          {
+            "prompt": "Frasco de vidrio intacto",
+            "correct": 3
+          }
+        ]
+      }
+    }
+  ]
+}
